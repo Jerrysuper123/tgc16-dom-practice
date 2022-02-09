@@ -3,7 +3,7 @@ function getFormValues() {
 
     let email = document.querySelector('#email-address').value;
 
-    let model = document.querySelector('.phone-type:checked');
+    let model = document.querySelector('.phone-type:checked').value;
 
     let services = [];
     let checkBoxes = document.querySelectorAll('.services:checked');
