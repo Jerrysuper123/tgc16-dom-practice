@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>repl.it</title>
-    <link href="index.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <div class="form">
-      <div>
-        <input type="text" placeholder="First name" />
-      </div>
-      <div>
-        <input type="text" placeholder="Last name" />
-      </div>
-      <div>
-        <label>Ticket Class:</label>
-        <input type="radio" />First Class <input type="radio" />Business Class
-        <input type="radio" />Economy
-      </div>
-      <div>
-        <label>Options:</label>
-        <input type="checkbox" />In-flight Meal
-        <input type="checkbox" />Free-flow drinks
-        <input type="checkbox" />In-flight entertainment
-        <input type="checkbox" />Extra luggage space
-      </div>
-      <button>Place booking</button>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>repl.it</title>
+  <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="form">
+    <div>
+      <input type="text" placeholder="First name" id="firstname" />
     </div>
-    <div id="summary"></div>
-    <script src="index.js"></script>
-  </body>
+    <div>
+      <input type="text" placeholder="Last name" id="lastname" />
+    </div>
+    <div>
+      <label>Ticket Class:</label>
+      <input type="radio" class="ticketclass" name="ticketclass" value="first" />First Class
+      <input type="radio" class="ticketclass" name="ticketclass" value="business" />Business Class
+      <input type="radio" class="ticketclass" name="ticketclass" value="economy" />Economy
+    </div>
+    <div>
+      <label>Options:</label>
+      <input type="checkbox" class="options" value="meal" />In-flight Meal
+      <input type="checkbox" class="options" value="drinks" />Free-flow drinks
+      <input type="checkbox" class="options" value="entertainment" />In-flight entertainment
+      <input type="checkbox" class="options" value="luggagespace" />Extra luggage space
+    </div>
+    <button id="bookingBtn">Place booking</button>
+  </div>
+  <div id="summary"></div>
+  <script src="index.js"></script>
+</body>
+
 </html>
