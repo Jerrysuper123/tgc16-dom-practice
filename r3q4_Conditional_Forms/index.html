@@ -1,32 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>repl.it</title>
-    <link href="index.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <h1>Registration Form</h1>
-    <div id="form">
-      <div>
-        <input type="text" name="first-name" placeholder="First name" />
-      </div>
-      <div>
-        <input type="text" name="last-name" placeholder="Last name" />
-      </div>
-      <div><input type="radio" />Local <input type="radio" />Tourists</div>
-      <div id="for-locals">
-        <h1>Locals: Please enter your postal code</h1>
-        <input type="text" name="postal-code" />
-      </div>
-      <div>
-        <h1>Tourists: Please enter your hotel name</h1>
-        <input type="text" name="hotel" />
-      </div>
-      <button>Sign Up</button>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>repl.it</title>
+  <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Registration Form</h1>
+  <div id="form">
+    <div>
+      <input id="firstname" type="text" name="first-name" placeholder="First name" />
     </div>
-    <div id="result"></div>
-    <script src="index.js"></script>
-  </body>
+    <div>
+      <input id="lastname" type="text" name="last-name" placeholder="Last name" />
+    </div>
+    <div>
+      <input id="local" type="radio" name="classification" class="classification" value="local" />Local
+      <input id="tourists" type="radio" name="classification" class="classification" value="tourists" />Tourists
+    </div>
+
+
+    <div id="for-locals" style="display: none;">
+      <h1>Locals: Please enter your postal code</h1>
+      <input type="text" name="postal-code" id="postalcode" />
+    </div>
+
+    <div id="for-tourists" style="display: none;">
+      <h1>Tourists: Please enter your hotel name</h1>
+      <input type="text" name="hotel" id="hotelname" />
+    </div>
+
+    <div id="signupBtn" style="display: none;">
+      <button id="signUp">Sign Up</button>
+    </div>
+
+
+  </div>
+  <div id="result"></div>
+  <script src="index.js"></script>
+</body>
+
 </html>
